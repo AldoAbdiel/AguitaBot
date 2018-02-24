@@ -12,7 +12,7 @@ class GreetingCommand extends commando.Command {
     
     async run(msg, args){
         //var roll = Math.floor(Math.random() * 6) + 1;
-        msg.reply("Hellooo! (:");
+        msg.reply("Holaaa! (:");
     }
 }
 module.exports = GreetingCommand;

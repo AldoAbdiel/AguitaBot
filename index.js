@@ -8,7 +8,8 @@ bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 
 bot.on('ready', () => {
-    bot.user.setGame('Your Kokoro | !help');
+    //bot.user.setWatch('One Piece | !help');
+    bot.user.setPresence({ game: { name: 'One Piece', type: 1 } });
     console.log(`Logged in as ${bot.user.tag}!`);
 });
 
@@ -31,7 +32,7 @@ bot.on('guildMemberAdd', member => {
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
-    channel.send(`Welcome to the server, ${member}`);
+    channel.send(`Bienvenido al servidor, ${member}`);
 });
 
 bot.login(token);
