@@ -17,7 +17,7 @@ class AnimeRecommendCommand extends commando.Command {
             ["Devilman","Esta sugoi","Aldo"],
             ["Hunter x Hunter","Esta sugoi","Aldo"]
         ];
-        var roll = Math.floor(Math.random() * anime.length) + 1;
+        var roll = Math.floor(Math.random() * anime.length);
         msg.reply("Titulo: " + anime[roll][0] + " | Descipcion: " + anime[roll][1] + 
             " | Recomendado por: " + anime[roll][2] );
     }
